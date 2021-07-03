@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="./app.js" defer></script>
     <title>SAM | PRO</title>
 </head>
 <body>
@@ -26,46 +28,141 @@
                 <div class="hero">
                     <div class="project-nav">    
                         <nav>
-                            <div id="select-project">Select a Project</div>
-                            <div id="preparing">Preparing</div>
-                            <div id="in-review">In Review</div>
-                            <div id="completed-tickets">Completed Tickets</div>
+                            <div class="project select-project" >Select a Project</div>
+                            <div class="project preparing" >Preparing</div>
+                            <div class="project in-review active-nav" >In Review</div>
+                            <div class="project completed-tickets" >Completed Tickets</div>
                         </nav>
                     </div>
                     <div class="main-display">
                         <div id="back-button"><-- Back</div>
-                        <div>
-                            <div class="card">
-                                <div class="group-12">
-                                    <ul>
-                                        <li>Ticket No:</li>
-                                        <li>Name:</li>
-                                        <li>Tax Return:</li>
-                                        <li>Commission:</li>
-                                        <li>Level of Difficulty:</li>
-                                        <li>CPA:</li>
-                                        <li>Due:</li>
-                                    </ul>
+                        <div id="select-project-tab" class="hidden">
+                            Select Projects
+                        </div>
+                        <div id="preparing-tab" class="hidden">
+                            Preparing
+                        </div>
+                        <div id="completed-tickets-tab" class="hidden">
+                            Completed Tickets
+                        </div>
+                        <div class="active-tab" id="in-review-tab">
+                            <div class="carousel">
+                                <div class="card active-card">
+                                    <div class="group-12">
+                                        <ul>
+                                            <li>Ticket No:</li>
+                                            <li>Name:</li>
+                                            <li>Tax Return:</li>
+                                            <li>Commission:</li>
+                                            <li>Level of Difficulty:</li>
+                                            <li>CPA:</li>
+                                            <li>Due:</li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-13">
+                                        <ul>
+                                            <li>#2525</li>
+                                            <li>Charles Edward Cheese</li>
+                                            <li>Business-2019</li>
+                                            <li>$117.09</li>
+                                            <li>Simple</li>
+                                            <li>SAM Admin</li>
+                                            <li>6 Hrs Overdue</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    
+                                        <button id="review-documents-button"><a href="#" >Review Documents</a></button>
                                 </div>
-                                <div class="group-13">
-                                    <ul>
-                                        <li>#2525</li>
-                                        <li>Megan McSweeny</li>
-                                        <li>Business-2019</li>
-                                        <li>$117.09</li>
-                                        <li>Simple</li>
-                                        <li>SAM Admin</li>
-                                        <li>6 Hrs Overdue</li>
-                                    </ul>
+                                <div class="card">
+                                    <div class="group-12">
+                                        <ul>
+                                            <li>Ticket No:</li>
+                                            <li>Name:</li>
+                                            <li>Tax Return:</li>
+                                            <li>Commission:</li>
+                                            <li>Level of Difficulty:</li>
+                                            <li>CPA:</li>
+                                            <li>Due:</li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-13">
+                                        <ul>
+                                            <li>#2525</li>
+                                            <li>John Cena</li>
+                                            <li>Business-2019</li>
+                                            <li>$117.09</li>
+                                            <li>Simple</li>
+                                            <li>SAM Admin</li>
+                                            <li>6 Hrs Overdue</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    
+                                        <button id="review-documents-button"><a href="#" >Review Documents</a></button>
                                     
                                 </div>
-                                <div class="button">
-                                    <button id="review-documents-button"><a href="#" >Review Documents</a></button>
+                                <div class="card">
+                                    <div class="group-12">
+                                        <ul>
+                                            <li>Ticket No:</li>
+                                            <li>Name:</li>
+                                            <li>Tax Return:</li>
+                                            <li>Commission:</li>
+                                            <li>Level of Difficulty:</li>
+                                            <li>CPA:</li>
+                                            <li>Due:</li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-13">
+                                        <ul>
+                                            <li>#2525</li>
+                                            <li>Megan McSweeny</li>
+                                            <li>Business-2019</li>
+                                            <li>$117.09</li>
+                                            <li>Simple</li>
+                                            <li>SAM Admin</li>
+                                            <li>6 Hrs Overdue</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    
+                                        <button id="review-documents-button"><a href="#" >Review Documents</a></button>
+                                    
+                                </div>
+                                <div class="card">
+                                    <div class="group-12">
+                                        <ul>
+                                            <li>Ticket No:</li>
+                                            <li>Name:</li>
+                                            <li>Tax Return:</li>
+                                            <li>Commission:</li>
+                                            <li>Level of Difficulty:</li>
+                                            <li>CPA:</li>
+                                            <li>Due:</li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-13">
+                                        <ul>
+                                            <li>#2525</li>
+                                            <li>Steve Irwin</li>
+                                            <li>Business-2019</li>
+                                            <li>$117.09</li>
+                                            <li>Simple</li>
+                                            <li>SAM Admin</li>
+                                            <li>6 Hrs Overdue</li>
+                                        </ul>
+                                        
+                                    </div>
+                                    
+                                        <button id="review-documents-button"><a href="#" >Review Documents</a></button>
+                                    
                                 </div>
                             </div>
+                            
                             <div class="carousel-controls">
-                                <button><</button>
-                                <button>></button>
+                                <button class="prev-btn no-mas"><</button>
+                                <button class="next-btn">></button>
                             </div>
                             
                         </div>
@@ -96,7 +193,7 @@
     <footer>
         <nav>
             <h2><a href="#"> SAM | PRO</a></h2>
-            <a href="#"><img src="./assets/Mail Icon.png" alt="mail-icon"></a>
+            <a href="#"><img src="./assets/Mail Icon.png" alt="mail-icon" id="mail-icon"></a>
         </nav>
     </footer>
 </body>

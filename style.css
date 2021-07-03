@@ -29,6 +29,8 @@ body {
     background-color: var(--black);
     border-radius: 50%;
     display: inline-block;
+    position: absolute;
+    transform: translateY(-10px);
 }
 
 .big-dot {
@@ -37,6 +39,9 @@ body {
     background-color: var(--black);
     border-radius: 50%;
     display: inline-block;
+    position: absolute;
+    transform: translateY(-25px) translateX(10px);
+
 }
 
 a {
@@ -132,20 +137,19 @@ h3 {
     font-size: 16px;
 }
 
-#select-project {
+.select-project {
     color: var(--white);
 }
 
-#preparing {
+.preparing {
     color: var(--preparing);
 }
 
-#in-review {
-    color: var(--black);
-    background-color: var(--white);
+.in-review {
+    color: var(--gray);
 }
 
-#completed-tickets {
+.completed-tickets {
     color: var(--gray);
 }
 
@@ -175,7 +179,7 @@ h3 {
 .group-12 {
    background-color: var(--off-black);
    color: var(--light-gray);
-   width: 183px;
+   width: 25%;
    height: 404px;
    
 }
@@ -196,7 +200,7 @@ h3 {
 .group-13 {
     background-color: var(--light-gray);
     color: var(--black);
-    width: 476px;
+    width: 75%
     height: 404px;
 }
 
@@ -216,6 +220,8 @@ h3 {
     margin: 339px 24px 24px 0;
     white-space: nowrap;
     border: none;
+    position: absolute;
+    transform: translateX(340%);
 }
 
 #review-documents-button a {
@@ -270,6 +276,7 @@ footer nav {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
+    align-items: center;
     color: var(--white);
     padding: 19px 60px;
 }
@@ -281,4 +288,36 @@ footer nav h2 a {
 #mail-icon {
     width: 46px;
     height: 35px;
+    transform: translate(-100px);
+    z-index: 100;
+}
+
+.carousel .card {
+    display: none;
+}
+
+.carousel .active-card {
+    display: flex;
+}
+
+.carousel button {
+    cursor: pointer;
+}
+
+.no-mas {
+    color: var(--dark-gray);
+}
+
+.project {
+    cursor: pointer;
+}
+
+.active-nav {
+    background-color: var(--white) !important;
+    color: var(--off-gray) !important;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hidden {
+    display: none !important;
 }

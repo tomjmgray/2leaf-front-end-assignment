@@ -55,7 +55,7 @@ $(document).ready(function(){
 
     $('.in-review').on('click', function(){
         $('.active-nav').removeClass('active-nav');
-        $('in-review').addClass('active-nav');
+        $('.in-review').addClass('active-nav');
         $('.active-tab').removeClass('active-tab').addClass('hidden');
         $('#in-review-tab').removeClass('hidden').addClass('active-tab');
     })

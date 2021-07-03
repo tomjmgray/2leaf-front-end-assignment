@@ -3,73 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>SAM | PRO</title>
 </head>
 <body>
     <header>
         <nav class="header">
-            <a href="#" class="home-link">SAM</a>
+            <a href="#" class="home-link">
+            
+            <h1>SAM</h1> 
+            <div class="small-dot"></div>
+            <div class="big-dot"></div>
+            </a>
         </nav>
     </header>
 
     <main>
         <h4>SAM | PRO</h4>
-        <div class="tickets-processing">
-            <h3>TICKETS PROCESSING</h3>
-            <div class="hero">
-                <div class="project-nav">    
-                    <ul>
-                        <li>Select a Project</li>
-                        <li>Preparing</li>
-                        <li>In Review</li>
-                        <li>Completed Tickets</li>
-                    </ul>
-                </div>
-                <div class="main-display">
-                    <a href="#">Back</a>
-                    <div class="card">
-                        <div class="group-13">
-                            <ul>
-                                <li>Ticket No:</li>
-                                <li>Name:</li>
-                                <li>Tax Return:</li>
-                                <li>Commission:</li>
-                                <li>Level of Difficulty:</li>
-                                <li>CPA:</li>
-                                <li>Due:</li>
-                            </ul>
+        <div class="main">
+            <div class="tickets-processing">
+                <h3>TICKETS PROCESSING</h3>
+                <div class="hero">
+                    <div class="project-nav">    
+                        <nav>
+                            <div id="select-project">Select a Project</div>
+                            <div id="preparing">Preparing</div>
+                            <div id="in-review">In Review</div>
+                            <div id="completed-tickets">Completed Tickets</div>
+                        </nav>
+                    </div>
+                    <div class="main-display">
+                        <div id="back-button"><-- Back</div>
+                        <div>
+                            <div class="card">
+                                <div class="group-12">
+                                    <ul>
+                                        <li>Ticket No:</li>
+                                        <li>Name:</li>
+                                        <li>Tax Return:</li>
+                                        <li>Commission:</li>
+                                        <li>Level of Difficulty:</li>
+                                        <li>CPA:</li>
+                                        <li>Due:</li>
+                                    </ul>
+                                </div>
+                                <div class="group-13">
+                                    <ul>
+                                        <li>#2525</li>
+                                        <li>Megan McSweeny</li>
+                                        <li>Business-2019</li>
+                                        <li>$117.09</li>
+                                        <li>Simple</li>
+                                        <li>SAM Admin</li>
+                                        <li>6 Hrs Overdue</li>
+                                    </ul>
+                                    
+                                </div>
+                                <div class="button">
+                                    <button id="review-documents-button"><a href="#" >Review Documents</a></button>
+                                </div>
+                            </div>
+                            <div class="carousel-controls">
+                                <button><</button>
+                                <button>></button>
+                            </div>
+                            
                         </div>
-                        <div class="group-12">
-                            <ul>
-                                <li>#2525</li>
-                                <li>Megan McSweeny</li>
-                                <li>Business-2019</li>
-                                <li>$117.09</li>
-                                <li>Simple</li>
-                                <li>SAM Admin</li>
-                                <li>6 Hrs Overdue</li>
-                            </ul>
-                        </div>
-
                     </div>
                 </div>
+                <div>
+                </div>
             </div>
-            <div>
-            </div>
-        </div>
 
-        <div class="my-stats">
-            <h3>MY STATS</h3>
-            <div class="stats-container">
-                <ul>
-                    <li><b>My Returns:</b> 2</li>
-                    <li><b>Years Experience:</b> 33 Years</li>
-                    <li><b>My Commission:</b>  9.00%</li>
-                    <li><b>Commission Pending:</b> $220.70</li>
-                    <li><b>Total Commission Paid:</b> $0.00</li>
-                </ul>
+            <div class="my-stats">
+                <h3>MY STATS</h3>
+                <div>
+                    <ul class="stats-container">
+                        <li><b>My Returns:</b> 2</li>
+                        <li><b>Years Experience:</b> 33 Years</li>
+                        <li><b>My Commission:</b>  9.00%</li>
+                        <li><b>Commission Pending:</b> $220.70</li>
+                        <li><b>Total Commission Paid:</b> $0.00</li>
+                    </ul>
+                </div>
             </div>
         </div>
+        
             
 
     </main>
@@ -77,7 +96,7 @@
     <footer>
         <nav>
             <h2><a href="#"> SAM | PRO</a></h2>
-            <a href="#"><img src="" alt="mail-icon"></a>
+            <a href="#"><img src="./assets/Mail Icon.png" alt="mail-icon"></a>
         </nav>
     </footer>
 </body>
